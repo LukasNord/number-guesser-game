@@ -5,7 +5,7 @@
 
 ## Setup Mode
 ### Game Setup Page
-- [ ] DOM Setup - two divs, selector element, start button
+- [x] DOM Setup - two divs, selector element, start button
 ### Functionality
 - [ ] Event listener on start game btn
 - [ ] Store user max choice in a variable
@@ -16,7 +16,7 @@
 - [ ] This mode is complete, on success, hide setup mode div
 
 ## Play Mode
-- [ ] DOM Setup - 4 inputs for each player, submit button, total guess indicator, max number indicator, higher/lower indicator, cancel game button, success message, restart button for winner
+- [X] DOM Setup - 4 inputs for each player, submit button, total guess indicator, max number indicator, higher/lower indicator, cancel game button, success message, restart button for winner
 ### Functionality
 - [ ] Event listener for cancel btn to reset game and go back to setup mode - POST, to reset everything to default
 - [ ] Display max chosen in setup mode as a reminder

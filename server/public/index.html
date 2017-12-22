@@ -11,5 +11,43 @@
 </head>
 <body>
     <h1>This is working YO</h1>
+    <div class="game-block" id="setup-mode">
+        <h2>Max Value Selector</h2>
+        <select>
+            <option value="10">1 - 10</option>
+            <option value="100">1 - 100</option>
+            <option value="1000">1 - 1000</option>
+        </select>
+        <button id="start-button">Start</button>
+    </div>
+    <div class="game-block" id="play-mode">
+        <ul class="users" id="user-list">
+            <li>
+                <div class="player-name">Player 1</div>
+                <input type="number">
+                <div class="high-low"></div>
+            </li>
+            <li>
+                <div class="player-name">Player 2</div>
+                <input type="number">
+                <div class="high-low"></div>
+            </li>
+            <li>
+                <div class="player-name">Player 3</div>
+                <input type="number">
+                <div class="high-low"></div>
+            </li>
+            <li>
+                <div class="player-name">Player 4</div>
+                <input type="number">
+                <div class="high-low"></div>
+            </li>
+        </ul>
+        <button id="submit-button">Submit Guesses</button>
+        <div class="guess-counter"></div>
+        <button class="cancel-game" id="cancel-game">Cancel Game</button>
+        <button style="display:none;" class="restart-button" id="restart-button">Restart Game</button>
+        <div style="display:none;" class="success-message">YOU WIN!</div>
+    </div>
 </body>
 </html>
