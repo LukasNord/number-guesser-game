@@ -1,5 +1,7 @@
 console.log('client.js sourced');
 
+let returnedArray = [];
+
 $(document).ready(start);
 
 function start() {
@@ -41,14 +43,40 @@ function getMaxValue() {
 }
 function submitGuess(){
     let playerArray = [ ];
+    
     $('#user-list li').each(function(){
         // console.log($('.player-name').text());
-    let playerName = $(this).find('.player-name').text();
-    let playerGuess = $(this).find('input').val();
-    // let newPlayer = new Player(playerName, playerGuess);   
-    playerArray.push(new Player(playerName, playerGuess));
-    $(this).find('input').val('');
-    });//end submitGuess function 
+        let playerName = $(this).find('.player-name').text();
+        let playerGuess = $(this).find('input').val();
+        let newPlayer = new Player(playerName, playerGuess);   
+        playerArray.push(newPlayer);
+        // $(this).find('input').val('');
+        
+    });//end each 
+
     console.log(playerArray);
+    $.ajax({
+        method:'POST',
+        url:'/playerguesses',
+        data: { playerArray: playerArray },
+        success: function(response){
+            console.log('response: ', response);
+            getResults();
+        }
+    });
+
+
 }//end submit guess function 
+
+function getResults() {
+    $.ajax({
+        method: 'GET',
+        url: '/playerguesses',
+        success: function(response) {
+            console.log('response', response);
+            returnedArray = response;
+            $('body').append('<p>' + returnedArray + '</p>');
+        }
+    })
+}
 

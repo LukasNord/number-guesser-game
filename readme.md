@@ -23,9 +23,9 @@
 - [x] Store users guesses in an object
 - [x] Clear input fields
 - [ ] Guess count on client.js
-- [ ] POST the object with .ajax to the server
-- [ ] app.post in server.js to connect to above POST
-- [ ] In module, do comparison calculations  - the hint and winner - on success, do GET, on client.js using array to loop to compare display high/low/win
+- [x] POST the object with .ajax to the server
+- [x] app.post in server.js to connect to above POST
+- [x] In module, do comparison calculations  - the hint and winner - on success, do GET, on client.js using array to loop to compare display high/low/win
 - [ ] High/low/win indicator on DOM
 - [ ] Event listener on restart button to reset game, same function as the cancel button 
 - [ ] Event listener for cancel btn to reset game and go back to setup mode - POST, to reset everything to default
