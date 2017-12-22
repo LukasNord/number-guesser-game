@@ -13,8 +13,6 @@ function start() {
 
 function startGame() {
     let maxValue = getMaxValue();
-    $('#setup-mode').hide();
-    $('#play-mode').show();
 
     $.ajax({
         method: 'POST',
@@ -22,6 +20,8 @@ function startGame() {
         data: { maxValue : maxValue },
         success: function(response) {
             console.log('response', response);
+            $('#setup-mode').hide();
+            $('#play-mode').show();
         }
     });
 

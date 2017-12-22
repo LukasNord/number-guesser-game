@@ -11,9 +11,9 @@
 - [X] Store user max choice in a variable, function fun
 - [X] POST max number choice from user with .ajax to server (body-parser)
 - [X] app.post in server.js to connect to above POST
-- [ ] Random number generator creation, function, require/export to server.js
-- [ ] Call random num generator function, pass in req.body the max value to use in the game
-- [ ] This mode is complete, on success, hide setup mode div
+- [x] Random number generator creation, function, require/export to server.js
+- [x] Call random num generator function, pass in req.body the max value to use in the game
+- [x] This mode is complete, on success, hide setup mode div
 
 ## Play Mode
 - [X] DOM Setup - 4 inputs for each player, submit button, total guess indicator, max number indicator, higher/lower indicator, cancel game button, success message, restart button for winner
