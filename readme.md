@@ -9,8 +9,8 @@
 ### Functionality
 - [X] Event listener on start game btn
 - [X] Store user max choice in a variable, function fun
-- [ ] POST number range from user with .ajax to server
-- [ ] app.post in server.js to connect to above POST
+- [X] POST max number choice from user with .ajax to server (body-parser)
+- [X] app.post in server.js to connect to above POST
 - [ ] Random number generator creation, function, require/export to server.js
 - [ ] Call random num generator function, pass in req.body the max value to use in the game
 - [ ] This mode is complete, on success, hide setup mode div
