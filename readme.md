@@ -7,11 +7,11 @@
 ### Game Setup Page
 - [x] DOM Setup - two divs, selector element, start button
 ### Functionality
-- [ ] Event listener on start game btn
-- [ ] Store user max choice in a variable
-- [ ] Random number generator creation, function, require/export to server.js
+- [X] Event listener on start game btn
+- [X] Store user max choice in a variable, function fun
 - [ ] POST number range from user with .ajax to server
 - [ ] app.post in server.js to connect to above POST
+- [ ] Random number generator creation, function, require/export to server.js
 - [ ] Call random num generator function, pass in req.body the max value to use in the game
 - [ ] This mode is complete, on success, hide setup mode div
 
